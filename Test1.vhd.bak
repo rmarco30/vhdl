@@ -1,0 +1,20 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity Test1 is
+    port (A       : in std_logic_vector(3 downto 0);
+          F       : out bit);
+end entity; 
+
+architecture sim of Test1 is
+
+    signal A_TB, B_TB, Sum_TB : std_logic_vector(3 downto 0);
+
+    begin
+        
+        for i in 0 to 15 loop
+            A_TB <= std_logic_vector(i);
+        end loop;
+                 
+end architecture;
